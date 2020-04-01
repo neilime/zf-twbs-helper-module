@@ -1,3 +1,9 @@
+---
+layout: default
+title:  "Home"
+menu: "menu.html"
+---
+
 <p align="center">
   <a href="https://github.com/neilime/twbs-helper-module" target="_blank"><img src="https://repository-images.githubusercontent.com/80362393/425f1180-7115-11ea-96d4-75646c99df22" width="600"></a>
 </p>

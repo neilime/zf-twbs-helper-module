@@ -1,0 +1,15 @@
+{
+    "name": "pcov/clobber",
+    "require": {
+	"ext-pcov": "^1.0",
+        "nikic/php-parser": "^4.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "pcov\\Clobber\\": "src/pcov/clobber"
+        }
+    },
+    "bin": [
+        "bin/pcov"
+    ]
+}

@@ -1,0 +1,78 @@
+{
+    "name": "laminas/laminas-paginator",
+    "description": "Paginate collections of data from arbitrary sources",
+    "license": "BSD-3-Clause",
+    "keywords": [
+        "laminas",
+        "paginator"
+    ],
+    "homepage": "https://laminas.dev",
+    "support": {
+        "docs": "https://docs.laminas.dev/laminas-paginator/",
+        "issues": "https://github.com/laminas/laminas-paginator/issues",
+        "source": "https://github.com/laminas/laminas-paginator",
+        "rss": "https://github.com/laminas/laminas-paginator/releases.atom",
+        "chat": "https://laminas.dev/chat",
+        "forum": "https://discourse.laminas.dev"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.8.x-dev",
+            "dev-develop": "2.9.x-dev"
+        },
+        "laminas": {
+            "component": "Laminas\\Paginator",
+            "config-provider": "Laminas\\Paginator\\ConfigProvider"
+        }
+    },
+    "require": {
+        "php": "^7.0 || ^5.6",
+        "laminas/laminas-stdlib": "^2.7 || ^3.0",
+        "laminas/laminas-zendframework-bridge": "^1.0"
+    },
+    "require-dev": {
+        "laminas/laminas-cache": "^2.6.1",
+        "laminas/laminas-coding-standard": "~1.0.0",
+        "laminas/laminas-config": "^2.6.0",
+        "laminas/laminas-db": "^2.9.2",
+        "laminas/laminas-filter": "^2.6.1",
+        "laminas/laminas-json": "^2.6.1",
+        "laminas/laminas-servicemanager": "^2.7.5 || ^3.0.3",
+        "laminas/laminas-view": "^2.6.3",
+        "phpunit/phpunit": "^6.2.1 || ^5.7.15"
+    },
+    "suggest": {
+        "laminas/laminas-cache": "Laminas\\Cache component to support cache features",
+        "laminas/laminas-db": "Laminas\\Db component",
+        "laminas/laminas-filter": "Laminas\\Filter component",
+        "laminas/laminas-json": "Laminas\\Json component",
+        "laminas/laminas-servicemanager": "Laminas\\ServiceManager component",
+        "laminas/laminas-view": "Laminas\\View component"
+    },
+    "autoload": {
+        "psr-4": {
+            "Laminas\\Paginator\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "LaminasTest\\Paginator\\": "test/"
+        }
+    },
+    "scripts": {
+        "check": [
+            "@cs-check",
+            "@test"
+        ],
+        "cs-check": "phpcs",
+        "cs-fix": "phpcbf",
+        "test": "phpunit --colors=always",
+        "test-coverage": "phpunit --colors=always --coverage-clover clover.xml"
+    },
+    "replace": {
+        "zendframework/zend-paginator": "self.version"
+    }
+}
