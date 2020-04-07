@@ -1,5 +1,6 @@
 # TwbsHelper
 
+* [ConfigProvider](ConfigProvider.md) 
 * [Form\View\Helper\Factory\FormCollectionFactory](Form/View/Helper/Factory/FormCollectionFactory.md) 
 * [Form\View\Helper\Factory\FormElementFactory](Form/View/Helper/Factory/FormElementFactory.md) 
 * [Form\View\Helper\Factory\FormFactory](Form/View/Helper/Factory/FormFactory.md) 
