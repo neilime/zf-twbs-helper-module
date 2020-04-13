@@ -45,7 +45,7 @@ TwbsHelper\View\Helper\AbstractHtmlElement
 **Description**
 
 ```php
-public __invoke (array $aSlides, array $aAttributes, bool $bEscape)
+public __invoke (array $aSlides, array $aOptionsAndAttributes, bool $bEscape)
 ```
 
 Generates a 'carousel' element 
@@ -56,7 +56,7 @@ Generates a 'carousel' element
 
 * `(array) $aSlides`
 : The slides of the carousel  
-* `(array) $aAttributes`
+* `(array) $aOptionsAndAttributes`
 : Html attributes of the "<div>" element  
 * `(bool) $bEscape`
 : True espace html content. Default True  

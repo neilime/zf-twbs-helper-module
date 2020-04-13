@@ -42,7 +42,7 @@ Laminas\Form\View\Helper\FormElement
 **Description**
 
 ```php
-public __construct (\TwbsHelper\Options\ModuleOptions $options)
+public __construct (\TwbsHelper\Options\ModuleOptions $oOptions)
 ```
 
 Constructor 
@@ -51,7 +51,7 @@ Constructor
 
 **Parameters**
 
-* `(\TwbsHelper\Options\ModuleOptions) $options`
+* `(\TwbsHelper\Options\ModuleOptions) $oOptions`
 
 **Return Values**
 

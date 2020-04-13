@@ -46,7 +46,7 @@ TwbsHelper\View\Helper\AbstractHtmlElement
 **Description**
 
 ```php
-public __invoke (string $sImageSrc, array $aOptions, array $aAttributes)
+public __invoke (string $sImageSrc, array $aOptionsAndAttributes)
 ```
 
 Generates a 'image' element 
@@ -57,15 +57,13 @@ Generates a 'image' element
 
 * `(string) $sImageSrc`
 : The path to the image  
-* `(array) $aOptions`
-: Image options. Default : empty. Allowed options:  
+* `(array) $aOptionsAndAttributes`
+: Image options and Html attributes. Default : empty. Allowed options:  
 - boolean fluid: responsive image  
 - boolean thumbnail: thumbnail image  
 - boolean rounded: rounded image  
 - boolean figure: figure image  
 - [srcset => type] sources: list of sources for <picture element>  
-* `(array) $aAttributes`
-: Html attributes of the "<img>" element. Default : empty  
 
 **Return Values**
 

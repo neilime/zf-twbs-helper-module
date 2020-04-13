@@ -37,7 +37,7 @@ Compatibility with Laminas and ZF3
 
 **Return Values**
 
-`void`
+`\TwbsHelper\Form\View\Helper\FormCollection`
 
 
 
@@ -65,7 +65,7 @@ Compatibility with ZF2 (>= 2.2) -> proxy to __invoke
 
 **Return Values**
 
-`void`
+`\TwbsHelper\Form\View\Helper\FormCollection`
 
 
 

@@ -45,7 +45,7 @@ TwbsHelper\View\Helper\AbstractHtmlElement
 **Description**
 
 ```php
-public __invoke (string|array $sContent, array $aAttributes, bool $bEscape)
+public __invoke (string|array $sContent, array $aOptionsAndAttributes, bool $bEscape)
 ```
 
 Generates a 'media' element 
@@ -56,7 +56,7 @@ Generates a 'media' element
 
 * `(string|array) $sContent`
 : The content of the alert  
-* `(array) $aAttributes`
+* `(array) $aOptionsAndAttributes`
 : Options & Html attributes  
 * `(bool) $bEscape`
 : True espace html content '$sContent'. Default True  

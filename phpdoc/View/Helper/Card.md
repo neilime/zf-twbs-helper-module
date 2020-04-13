@@ -45,7 +45,7 @@ TwbsHelper\View\Helper\AbstractHtmlElement
 **Description**
 
 ```php
-public __invoke (string $sContent, string $sVariation, bool $bDismissible, array $aAttributes, bool $bEscape)
+public __invoke (string $sContent, array $aAttributes, bool $bEscape)
 ```
 
 Generates an 'alert' element 
@@ -56,10 +56,6 @@ Generates an 'alert' element
 
 * `(string) $sContent`
 : The content of the alert  
-* `(string) $sVariation`
-: The type of the alert (success, info, warning, danger). Default : empty  
-* `(bool) $bDismissible`
-: True if the alert can be dismissable. Default : false  
 * `(array) $aAttributes`
 : Html attributes of the "<div>" element  
 * `(bool) $bEscape`
@@ -69,7 +65,7 @@ Generates an 'alert' element
 
 `string`
 
-> The alert XHTML.
+> The card XHTML.
 
 
 <hr />

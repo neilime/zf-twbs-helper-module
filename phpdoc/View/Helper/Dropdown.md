@@ -73,7 +73,7 @@ TwbsHelper\View\Helper\AbstractHtmlElement
 **Description**
 
 ```php
-public render (\Laminas\Form\ElementInterface|array $oDropdown)
+public render (\Laminas\Form\ElementInterface|iterable $oDropdown, bool $bEscape)
 ```
 
 Render dropdown markup 
@@ -82,7 +82,9 @@ Render dropdown markup
 
 **Parameters**
 
-* `(\Laminas\Form\ElementInterface|array) $oDropdown`
+* `(\Laminas\Form\ElementInterface|iterable) $oDropdown`
+* `(bool) $bEscape`
+: Escape the dropdown.  
 
 **Return Values**
 
@@ -99,7 +101,7 @@ Render dropdown markup
 **Description**
 
 ```php
-public renderMenu (array $aDropdownOptions)
+public renderMenu (array $aItems, array $aAttributes, bool $bEscape)
 ```
 
 Render dropdown menu markup 
@@ -108,7 +110,12 @@ Render dropdown menu markup
 
 **Parameters**
 
-* `(array) $aDropdownOptions`
+* `(array) $aItems`
+: Dropdown menu items  
+* `(array) $aAttributes`
+: Dropdown menu attributes  
+* `(bool) $bEscape`
+: Escape the dropdown menu.  
 
 **Return Values**
 
@@ -155,7 +162,7 @@ Render dropdown menu markup
 **Description**
 
 ```php
-public renderToggle (array $aDropdownOptions)
+public renderToggle (\Laminas\Form\ElementInterface $oDropdown)
 ```
 
 Render dropdown toggle markup 
@@ -164,7 +171,7 @@ Render dropdown toggle markup
 
 **Parameters**
 
-* `(array) $aDropdownOptions`
+* `(\Laminas\Form\ElementInterface) $oDropdown`
 
 **Return Values**
 

@@ -45,7 +45,7 @@ TwbsHelper\View\Helper\AbstractHtmlElement
 **Description**
 
 ```php
-public __invoke (array $aItems, bool $bOrdered, array $aAttributes, bool $bEscape)
+public __invoke (array $aItems, array $aOptionsAndAttributes, bool $bEscape)
 ```
 
 Generates a 'List' element. Manage indentation of Xhtml markup 
@@ -56,9 +56,7 @@ Generates a 'List' element. Manage indentation of Xhtml markup
 
 * `(array) $aItems`
 : Array with the elements of the list  
-* `(bool) $bOrdered`
-: Specifies ordered/unordered list; default unordered  
-* `(array) $aAttributes`
+* `(array) $aOptionsAndAttributes`
 : Attributes for the ol/ul tag.  
 If class attributes contains "list-inline", so the li will have the class "list-inline-item"  
 * `(bool) $bEscape`
