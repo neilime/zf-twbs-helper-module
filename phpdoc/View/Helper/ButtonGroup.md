@@ -14,7 +14,6 @@ TwbsHelper\View\Helper\AbstractHtmlElement
 | Name | Description |
 |------|-------------|
 |[__invoke](#buttongroup__invoke)||
-|[getButtonGroupOptions](#buttongroupgetbuttongroupoptions)|Return valid button group settings or null|
 |[getFormElementHelper](#buttongroupgetformelementhelper)||
 |[render](#buttongrouprender)|Render button groups markup|
 
@@ -62,32 +61,6 @@ TwbsHelper\View\Helper\AbstractHtmlElement
 **Return Values**
 
 `void`
-
-
-<hr />
-
-
-### ButtonGroup::getButtonGroupOptions  
-
-**Description**
-
-```php
-public getButtonGroupOptions (array $options)
-```
-
-Return valid button group settings or null 
-
- 
-
-**Parameters**
-
-* `(array) $options`
-
-**Return Values**
-
-`array|null`
-
-
 
 
 <hr />
