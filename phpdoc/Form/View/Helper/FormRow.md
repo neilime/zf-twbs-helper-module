@@ -16,6 +16,7 @@ Laminas\Form\View\Helper\FormRow
 |[__construct](#formrow__construct)|Constructor|
 |[addProperIndentation](#formrowaddproperindentation)||
 |[attributesToString](#formrowattributestostring)||
+|[getInputValidClass](#formrowgetinputvalidclass)|The class that is added to element that are valid or have valid feedback|
 |[getPrefixedClass](#formrowgetprefixedclass)||
 |[getSizeClass](#formrowgetsizeclass)||
 |[htmlElement](#formrowhtmlelement)||
@@ -134,6 +135,32 @@ Constructor
 **Return Values**
 
 `void`
+
+
+<hr />
+
+
+### FormRow::getInputValidClass  
+
+**Description**
+
+```php
+public getInputValidClass (void)
+```
+
+The class that is added to element that are valid or have valid feedback 
+
+ 
+
+**Parameters**
+
+`This function has no parameters.`
+
+**Return Values**
+
+`string`
+
+
 
 
 <hr />
